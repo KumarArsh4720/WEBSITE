@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEBSITE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="assets/logo.png" alt="logo">
+        </div>
+
+        <div class="center-container">
+            <div class="search-box">
+                <form action="/search" method="get">
+                    <input type="text" name="query" placeholder="Search...">
+                    <button type="submit" class="material-icons">search</button>
+                </form>
+            </div>
+
+        <label for="file-upload" class="custom-file-upload">
+            <input id="file-upload" type="file" style="display: none;">
+            <span class="material-icons">upload</span>
+            <span style="background-color: inherit;">Upload</span>
+        </label>
+    </div>
+
+        
+        <select name="language" id="language">
+            <option value="A">EN</option>
+            <option value="B">ES</option>
+            <option value="C">FR</option>
+            <option value="D">JA</option>
+            <option value="E">ZH</option>
+        </select>
+    </nav>
+
+    <nav id="options">
+        <div class="options">
+            <ul>
+                <li class="nav-text"><a href="https://www.google.com">HOME</a></li>
+
+                <li class="nav-text"><span>VIDEOS </span><svg width="35" height="35" viewBox="0 0 24 24" fill="white"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M6 9L11.2929 14.2929C11.6262 14.6262 11.7929 14.7929 12 14.7929C12.2071 14.7929 12.3738 14.6262 12.7071 14.2929L18 9"
+                            stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </li>
+
+
+                <li class="nav-text"><span>CATEGORY </span><svg width="35" height="35" viewBox="0 0 24 24" fill="white"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M6 9L11.2929 14.2929C11.6262 14.6262 11.7929 14.7929 12 14.7929C12.2071 14.7929 12.3738 14.6262 12.7071 14.2929L18 9"
+                            stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </li>
+
+
+
+                <li class="nav-text blink"><a href="https://www.google.com">LIVE</a></li>
+
+                <li class="nav-text"><a href="https://www.google.com">PREMIUM</a></li>
+
+
+
+
+                <li class="nav-text"><span>COMMUNITY </span><svg width="35" height="35" viewBox="0 0 24 24" fill="white"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M6 9L11.2929 14.2929C11.6262 14.6262 11.7929 14.7929 12 14.7929C12.2071 14.7929 12.3738 14.6262 12.7071 14.2929L18 9"
+                            stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </li>
+
+
+                <li class="nav-text"><span>PHOTOS & GIFS </span><svg width="35" height="35" viewBox="0 0 24 24"
+                        fill="white" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M6 9L11.2929 14.2929C11.6262 14.6262 11.7929 14.7929 12 14.7929C12.2071 14.7929 12.3738 14.6262 12.7071 14.2929L18 9"
+                            stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="video-container">
+        <p id="video-index">Lorem ipsum dolor</p>
+        <p id="more-videos"><span class="material-icons">add</span>More Videos</p>
+    </div>
+
+    <div id="content">
+
+        <div id="video-section">
+            <div><video class="video" controls src="videos/sample-video.mp4" width="460px" height="200px" poster="assets/blur.jpg"></video></div>
+            <div><video class="video" controls src="videos/sample-video.mp4" width="460px" height="200px" poster="assets/blur.jpg"></video></div>
+            <div><video class="video" controls src="videos/sample-video.mp4" width="460px" height="200px" poster="assets/blur.jpg"></video></div>
+            <div><video class="video" controls src="videos/sample-video.mp4" width="460px" height="200px" poster="assets/blur.jpg"></video></div>
+            <div><video class="video" controls src="videos/sample-video.mp4" width="460px" height="200px" poster="assets/blur.jpg"></video></div>
+            <div><video class="video" controls src="videos/sample-video.mp4" width="460px" height="200px" poster="assets/blur.jpg"></video></div>
+            <div><video class="video" controls src="videos/sample-video.mp4" width="460px" height="200px" poster="assets/blur.jpg"></video></div>
+            <div><video class="video" controls src="videos/sample-video.mp4" width="460px" height="200px" poster="assets/blur.jpg"></video></div>
+            <div><video class="video" controls src="videos/sample-video.mp4" width="460px" height="200px" poster="assets/blur.jpg"></video></div>
+        </div>
+
+
+        <div id="ad-section">
+            <img src="assets/dummy_ad.png" alt="Ad" id="ad-image">
+        </div>
+    </div>
+</body>
+
+</html>
