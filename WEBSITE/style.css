@@ -1,0 +1,309 @@
+* {
+    background-color: black;
+    font-family: "Segoe UI";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+#navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    padding: 25px;
+    background-color: black;
+    position: relative;
+}
+
+
+#logo {
+    position: absolute;
+    left: 12px;
+}
+
+#logo img {
+    width: 20vw;
+    height: 20vh;
+    cursor: pointer;
+}
+
+.center-container {
+    background-color: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    max-width: 500px;
+    margin: 2em;
+}
+
+.search-box form {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.search-box input[type="text"] {
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px 0 0 5px;
+    border: 1px solid #ccc;
+    flex: 1;
+    border-right: none;
+    width: 100%;
+}
+
+.search-box button {
+    background-color: #ff9900;
+    font-weight: bold;
+    border-radius: 0px 5px 5px 0px;
+    border: none;
+    cursor: pointer;
+    color: black;
+    font-size: 24px;
+    margin-left: -1px;
+    padding: 2.5px 15px;
+}
+
+.custom-file-upload {
+    background-color: #ff9900;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+    margin-left: 10px;
+    padding: 1.5px 15px;
+    /* Increase padding for better appearance */
+    display: flex;
+    align-items: center;
+}
+
+.custom-file-upload .material-icons {
+    margin-right: 5px;
+    background-color: inherit;
+}
+
+#language {
+    background-color: inherit;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1px;
+    margin-left: auto;
+
+}
+
+#options {
+    background-color: #0f0f0f;
+    color: rgb(224, 221, 221);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.options {
+    background-color: #0f0f0f;
+}
+
+.options ul {
+    display: flex;
+    background-color: inherit;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.options ul li {
+    display: flex;
+    margin: 0 50px;
+    background-color: inherit;
+    align-items: center;
+    cursor: pointer;
+}
+
+.options ul li span,
+.options ul li a {
+    background-color: inherit;
+    color: inherit;
+    display: inline-flex;
+    align-items: center;
+    padding: 0 5px;
+}
+
+.options ul li svg {
+    fill: white;
+    background-color: inherit;
+    display: inline-flex;
+    align-items: center;
+    padding: 0 5px;
+}
+
+/* .options ul li a {
+    text-decoration: none;
+    color: inherit;
+} */
+
+.options ul li:hover {
+    color: #ff9900;
+}
+
+#user {
+    background-color: #0f0f0f;
+    color: rgb(224, 221, 221);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.blink {
+    position: relative;
+    padding-left: 20px;
+}
+
+.blink::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    border-radius: 50%;
+    animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+
+
+#video-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #1b1b1b;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    margin: 50px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+#video-index {
+    margin-right: 0;
+    /* Remove margin to ensure elements are attached */
+    padding: 10px;
+    /* Add padding inside the element */
+    background-color: #2e2e2f;
+    /* Background color for the video index */
+    border-radius: 5px 0 0 5px;
+    /* Rounded corners for the left side */
+}
+
+#more-videos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    /* Add padding inside the element */
+    margin: 10px 0;
+    /* Add margin to the top and bottom of the section */
+    margin-left: auto;
+    /* Move to the right side */
+    cursor: pointer;
+    background-color: #2e2e2f;
+    /* Background color for the more videos section */
+    color: white;
+    /* Ensure the text color is white */
+    border-radius: 0 5px 5px 0;
+    /* Rounded corners for the right side */
+}
+
+#more-videos .material-icons {
+    margin-right: 5px;
+    /* Add some space between the icon and the text */
+    background-color: inherit;
+}
+
+#content {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    margin: 28px;
+}
+
+#video-section {
+    display: flex;
+    flex-wrap: wrap;
+    /* Allow videos to wrap to the next line if necessary */
+    gap: 30px;
+    /* Add space between video elements */
+    margin: 30px 0;
+    /* Add margin to the top and bottom of the section */
+    flex: 3;
+    /* Take up more space */
+}
+
+.video {
+    /* width: 408px;
+    height: 259px; */
+    width: 100%;
+    /* Make video width responsive */
+    max-width: 408px;
+    /* Set a max-width for larger screens */
+    height: auto;
+    /* Maintain aspect ratio */
+    border: 1px solid black;
+    box-sizing: border-box;
+    margin: auto;
+}
+
+/* .video {
+    width: 388px;
+    height: 245px;
+    border: 2px solid black;
+    padding: 10px;
+    box-sizing: border-box;
+} */
+
+#ad-section {
+    flex: 1;
+    /* Take up less space */
+    margin-left: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#ad-image {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    /* Adjust as needed */
+    border: 2px solid black;
+}
